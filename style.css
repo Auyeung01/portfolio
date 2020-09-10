@@ -4,14 +4,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 img
 {
   width: 300px;
   height: 300px;
-
 }
 
 h1, h2, h3 
@@ -39,21 +37,30 @@ body, footer
 background-color: lightgrey;
 }
 
+/* line breaks between sections */
 hr
 {
   margin: 5px;
   padding: 5px;
-  
-}
+  }
 
+/* affects all paragraphs */
 p
 {
   text-align: center;
 }
 
-ul, ol
+
+/* affects all line items */
+li
 {
- text-align: center;
- list-style-position: inside;
+  text-align: left;
 }
 
+/* centers bullet points */
+.parent {
+  text-align: center;
+}
+.parent > ul, ol {
+  display: inline-block;
+}
